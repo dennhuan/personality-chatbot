@@ -104,7 +104,7 @@ class PersonalityAnalyzer: ObservableObject {
         let desc = result.getCurrentDescription(intensity: .moderate)
         return """
         🎉 个性分析完成
-        你的个性倾向：\(result.chineseTitle) / \(result.englishTitle)
+        你的个性倾向：\(result.title)
         \n\(desc)\n\n提示：个性会随着经历而变化，这只是当前倾向。
         """
     }

@@ -7,12 +7,14 @@ A welcome chatbot iOS application that can classify user personalities and provi
 
 ## 功能特点 Features
 
-- 🎉 互动欢迎体验 / Interactive welcome experience
-- 🧠 通过对话进行个性分类 / Personality classification through conversation
-- 💬 基于个性类型的个性化回应 / Personalized responses based on personality type
-- 📱 原生 iOS 应用界面 / Native iOS app interface
-- 🇨🇳 完整中文本地化支持 / Full Chinese localization support
-- 🎨 适配中国用户习惯的UI设计 / UI design adapted for Chinese user preferences
+- 🎉 互动欢迎体验，支持语音功能测试
+- 🧠 通过对话进行个性分类
+- 💬 基于个性类型的个性化回应
+- 📱 原生 iOS 应用界面
+- 🇨🇳 完整中文界面设计
+- 🎤 中文语音识别输入
+- 🔊 智能语音合成朗读
+- 🎨 专为中国用户设计的交互体验
 
 ## 开发环境要求 Requirements
 

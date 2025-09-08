@@ -11,21 +11,8 @@ enum PersonalityTendency: String, CaseIterable {
     case stabilizing = "稳定倾向"     // 守护稳定倾向
     case innovating = "创新倾向"      // 创新变革倾向
     
-    var chineseTitle: String {
+    var title: String {
         return self.rawValue
-    }
-    
-    var englishTitle: String {
-        switch self {
-        case .analytical: return "Analytical Tendency"
-        case .harmonizing: return "Harmonizing Tendency"
-        case .adventurous: return "Adventurous Tendency"
-        case .nurturing: return "Nurturing Tendency"
-        case .leading: return "Leading Tendency"
-        case .creative: return "Creative Tendency"
-        case .stabilizing: return "Stabilizing Tendency"
-        case .innovating: return "Innovating Tendency"
-        }
     }
 }
 
@@ -59,7 +46,7 @@ struct PersonalityProfile {
         let baseDescription = primaryTendency.getCurrentDescription(intensity: intensity)
         let variationNote = "你的个性会根据环境、经历和成长而发生变化，这是完全正常的。"
         let secondaryNote = secondaryTendency != nil ? 
-            "你同时也展现出\(secondaryTendency!.chineseTitle)的特征。" : ""
+            "你同时也展现出\(secondaryTendency!.title)的特征。" : ""
         
         return "\(baseDescription)\n\n\(secondaryNote)\n\n\(variationNote)"
     }
